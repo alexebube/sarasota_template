@@ -6,7 +6,249 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
-    display: block;
+body{
+    font-family: calibri;
+}
+a{
+    color: #31b0d5;
+}
+#wrap {
+    background: #ffffff;
 }
 
+#header {
+    background: #31b0d5;
+    height: 130px;
+}
+#header h1{
+    color: #ffffff;
+    font-size: 40px;
+}
+nav.col-md-8{
+    margin: 15px auto;
+}
+#search-container{
+    background: #555555;
+    padding: 5px 0 5px 0;
+    border-top: 10px solid #aaaaaa;
+}
+/*
+*Breadcrumbs markup
+*/
+#breadrumbs{
+    padding: 0;
+}
+#breadrumbs ul{
+    list-style: none;
+    padding: 0 0 0 15px;
+    margin: 5px auto;
+    
+}
+#breadrumbs ul li {
+    position: relative;
+    float: left;
+    padding: 0 0 0 5px;
+}
+#breadrumbs ul li a{
+    color:#f2f2f2;
+}
+.form-control {
+    height: 30px;
+}
+
+#main-section{
+    background: #ffffff;
+    padding-top: 20px;
+}
+#main-section a{
+    color: #31b0d5;
+}
+
+#footer{
+    background: #cccccc;
+    padding-top: 20px;
+}
+#footer .well {
+    background: rgba(0,0,0,0.3);
+    border: none;
+}
+
+#content .meta{
+    width: 45%;
+    margin-left: 1px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    margin-top:20px;
+    background: #ffffff;
+    
+}
+#content .meta .col-md-8{
+    background: #ffffff;
+    padding: 5px 0 5px 5px;
+    border-radius: 4px;
+}
+#content .meta .col-md-4{
+    background: #31b0d5;
+    color: #ffffff;
+    padding: 5px 0 5px 10px;
+    border-top-left-radius:10px;
+}
+#content h3.heading{
+    background: rgba(0,0,0,0.4);
+    color: #ffffff;
+    padding: 5px 0 5px 5px;
+    border-radius: 4px;
+}
+p.article-content{
+    font-size: 18px;
+}
+button {
+    background:#31b0d5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 5px 3px 5px;
+}
+#content hr{
+    background: #999999;
+    color: #999999;
+    }
+    #content .latest-news {
+        font-size: 18px;
+    }
+    #content .latest-news ul{
+        list-style: none;
+        padding: 0;
+    }
+/*
+*
+*Toggle button menu for smaller screen
+*
+*/	
+.showMenu {
+		display:none;
+		background: #666;
+		padding: 10px 15px;
+		color:#000000;
+	}
+		
+/*
+*
+*Create markup for the navigation menu
+*
+*/
+.nav {
+		list-style: none;
+		*zoom: 1;
+		background:none;
+	}
+
+.nav:before {
+		content: " ";
+		display:table;
+	}
+	
+.nav:after {
+		content: " ";
+		display:table;
+		clear:both;
+	}
+
+.nav ul {
+		list-style:none;
+		width: 13em;
+	}
+
+.nav a {
+		padding:10px 15px;
+		color:#fff;
+                text-decoration: none;
+	}
+		
+.nav li {
+		position: relative;
+	}
+
+.nav > li {
+		float: left;
+	}
+	
+.nav > li > .parent {
+		background-repeat:no-repeat;
+		background-position:right;
+	}
+	
+.nav > li > a {
+		display: block;
+                width: 100%;
+	}
+.nav > li > a:hover, .nav >li > a:focus {
+		background: none;
+	}
+.nav li ul {
+		position:absolute;
+		left: -9999px;
+	}
+
+.nav > li.hover > ul {
+		left: -40px;
+	}
+	
+.nav li li.hover ul {
+		left: 100%;
+		top: 0;
+	}
+	
+.nav li li a {
+		display:block;
+		background: rgba(0,0,0,0.5);
+		position: relative;
+		z-index: 100;
+		border-bottom: 1px solid rgba(225,225,225,0.4);
+	}
+	
+.nav li li li a {
+		background:rgba(0,0,0,0.5);
+		z-index:200;
+		border-top: 1px solid rgba(225,225,225,0.4);
+	}
+
+        .nav li li a:hover {
+            background: rgba(255,255,255,0.2);
+            color: #000000;
+        }
+/*
+*
+* Create style for media queries for smaller creens
+*
+*/
+
+@media screen and (max-width: 768px) {
+		.active {
+				display:block;	
+			}
+		
+		.nav > li {
+				float:none;
+			}
+		
+		.nav > li > .parent {
+				background-position: 95% 50%;
+			}
+			
+		.nav li li .parent {
+				background-repeat: no-repeat;
+				background-position: 95% 50%;
+			}
+			
+		.nav ul {
+				display: block;
+				width: 100%;	
+			}
+		.nav > li.hover > ul, .nav li li.hover ul {
+				position: static;	
+			}
+	}
+ .lavalamp-object {
+    background-color:rgba(0,0,0,0.2);
+}
