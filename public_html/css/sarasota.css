@@ -30,7 +30,7 @@ nav.col-md-8{
 #search-container{
     background: #555555;
     padding: 5px 0 5px 0;
-    border-top: 10px solid #bbbbbb;
+    border-top: 7px solid #bbbbbb;
 }
 /*
 *Breadcrumbs markup
@@ -51,6 +51,9 @@ nav.col-md-8{
 }
 #breadrumbs ul li a{
     color:#f2f2f2;
+}
+#breadrumbs .breadcrumb-divider{
+    color:#31b0d5;
 }
 .form-control {
     height: 30px;
@@ -92,10 +95,11 @@ nav.col-md-8{
     border-top-left-radius:10px;
 }
 #content h3.heading{
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.6);
     color: #ffffff;
     padding: 5px 0 5px 5px;
     border-radius: 4px;
+    font-size: 22px;
 }
 p.article-content{
     font-size: 18px;
@@ -120,6 +124,17 @@ button:hover {
     #content .latest-news ul{
         list-style: none;
         padding: 0;
+    }
+    .social-network{
+        list-style: none;
+    }
+    .social-network li{
+        float: left;
+        margin-right: 5px;
+    }
+    .social-network img{
+        width: 40px;
+        height: 40px;
     }
 /*
 *
@@ -164,6 +179,7 @@ button:hover {
 		padding:10px 15px;
 		color:#fff;
                 text-decoration: none;
+                font-size: 16px;
 	}
 		
 .nav li {
@@ -252,4 +268,5 @@ button:hover {
 	}
  .lavalamp-object {
     background-color:rgba(0,0,0,0.2);
+    border-radius: 4px;
 }
