@@ -20,9 +20,10 @@ a{
     background: #31b0d5;
     height: 130px;
 }
-#header h1{
+#header h1 a{
     color: #ffffff;
     font-size: 40px;
+    text-decoration: none;
 }
 nav.col-md-8{
     margin: 15px auto;
@@ -70,10 +71,30 @@ nav.col-md-8{
 #footer{
     background: #555555;
     padding-top: 20px;
+    padding-bottom: 10px;
     border-top: 4px solid #31b0d5;
     color: #ffffff;
 }
-
+#footer .florida_logo{
+    background: url('http://localhost:8383/sarasota/images/florida_logo_active.png') no-repeat;
+    display: block;
+    height: 56px;
+    width: 106px;
+}
+#footer .florida_logo:hover{
+    background: url('http://localhost:8383/sarasota/images/florida_logo_hover.png') no-repeat;
+    display: block;
+    height: 56px;
+    width: 106px;
+}#footer .partnership_lang{
+    text-align: justify;
+    font-size: 16px;
+}
+#copyright{
+    background: #444444;
+    color: #ffffff;
+      
+}
 #content .meta{
     width: 45%;
     margin-left: 1px;
