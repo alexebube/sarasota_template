@@ -59,5 +59,5 @@ var respondMenu = function (){
 			});
 			}
 	
-}
+};
 

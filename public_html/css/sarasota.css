@@ -18,7 +18,8 @@ a{
 
 #header {
     background: #31b0d5;
-    height: 130px;
+    height: 150px;
+    padding-top: 20px;
 }
 #header h1 a{
     color: #ffffff;
@@ -88,12 +89,14 @@ nav.col-md-8{
     width: 106px;
 }#footer .partnership_lang{
     text-align: justify;
-    font-size: 16px;
+    font-size: 15px;
 }
 #copyright{
     background: #444444;
-    color: #ffffff;
-      
+    color: #ffffff;    
+}
+#copyright .copy{
+    margin-left: 15px;
 }
 #content .meta{
     width: 45%;
