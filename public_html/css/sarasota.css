@@ -12,51 +12,63 @@ body{
 a{
     color: #31b0d5;
 }
+button {
+    background:#31b0d5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 7px 5px 7px;
+}
+button:hover {
+    background:#269abc;
+}
 #wrap {
     background: #ffffff;
 }
 
 #header {
-    background: #31b0d5;
-    height: 150px;
-    padding-top: 20px;
+    background-image: linear-gradient(bottom, rgb(53,171,204) 0%, rgb(49,175,213) 59%, rgb(52,163,194) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(53,171,204) 0%, rgb(49,175,213) 59%, rgb(52,163,194) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(53,171,204) 0%, rgb(49,175,213) 59%, rgb(52,163,194) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(53,171,204) 0%, rgb(49,175,213) 59%, rgb(52,163,194) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(53,171,204) 0%, rgb(49,175,213) 59%, rgb(52,163,194) 100%);
+
+    background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(53,171,204)),
+	color-stop(0.59, rgb(49,175,213)),
+	color-stop(1, rgb(52,163,194))
+    );
+    padding: 0 0 35px 0;
+    border-bottom: 7px solid #555555;
+}
+#header #navigate{
+    padding-left: 30px;
+    float: right;
+}
+#header .logohead{
+    text-align: center;
+}
+#header .lang{
+    color: #000000;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding-top: 13px;
+    
 }
 #header h1 a{
     color: #ffffff;
-    font-size: 40px;
+    font-size: 80px;
+    font-weight: bolder;
     text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
-nav.col-md-8{
-    margin: 15px auto;
-}
-#search-container{
-    background: #555555;
-    padding: 5px 0 5px 0;
-    border-top: 7px solid #bbbbbb;
-}
-/*
-*Breadcrumbs markup
-*/
-#breadrumbs{
-    padding: 0;
-}
-#breadrumbs ul{
-    list-style: none;
-    padding: 0 0 0 15px;
-    margin: 5px auto;
-    
-}
-#breadrumbs ul li {
-    position: relative;
-    float: left;
-    padding: 0 0 0 5px;
-}
-#breadrumbs ul li a{
-    color:#f2f2f2;
-}
-#breadrumbs .breadcrumb-divider{
-    color:#31b0d5;
-}
+
+
 .form-control {
     height: 30px;
 }
@@ -77,16 +89,16 @@ nav.col-md-8{
     color: #ffffff;
 }
 #footer .florida_logo{
-    background: url('http://localhost:8383/sarasota/images/florida_logo_active.png') no-repeat;
+    background: url('http://localhost:8383/sarasota/images/florida_logo.png') no-repeat;
     display: block;
-    height: 56px;
-    width: 106px;
+    height: 80px;
+    width: 160px;
 }
 #footer .florida_logo:hover{
-    background: url('http://localhost:8383/sarasota/images/florida_logo_hover.png') no-repeat;
+    background: url('http://localhost:8383/sarasota/images/florida_logo2.png') no-repeat;
     display: block;
-    height: 56px;
-    width: 106px;
+    height: 80px;
+    width: 160px;
 }#footer .partnership_lang{
     text-align: justify;
     font-size: 15px;
@@ -95,9 +107,7 @@ nav.col-md-8{
     background: #444444;
     color: #ffffff;    
 }
-#copyright .copy{
-    margin-left: 15px;
-}
+
 #content .meta{
     width: 45%;
     margin-left: 1px;
@@ -125,18 +135,12 @@ nav.col-md-8{
     border-radius: 4px;
     font-size: 22px;
 }
-p.article-content{
+#content .posthead{
+    color: #31b0d5;
+}
+#content p.article-content{
     font-size: 18px;
-}
-button {
-    background:#31b0d5;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 7px 5px 7px;
-}
-button:hover {
-    background:#269abc;
+    text-align: justify;
 }
 #content hr{
     background: #999999;
@@ -170,6 +174,8 @@ button:hover {
 		background: #666;
 		padding: 10px 15px;
 		color:#000000;
+                font-weight: bold;
+                text-decoration: none;
 	}
 		
 /*
